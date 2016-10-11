@@ -1,7 +1,7 @@
-﻿using FacadeExample.CarSystem;
-
-namespace FacadeExample
+﻿namespace FacadeExample.CarFacede
 {
+    using FacadeExample.CarSystem;
+
     public class CarFacade
     {
         private readonly CarModel model;

@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CarFacade.cs" />
+    <Compile Include="CarFacade\CarFacade.cs" />
     <Compile Include="CarSystem\CarAccessories.cs" />
     <Compile Include="CarSystem\CarBody.cs" />
     <Compile Include="CarSystem\CarEngine.cs" />
@@ -53,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeMap-Facade.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
