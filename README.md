@@ -10,6 +10,8 @@
 Примери за фасада: AJAX заявките в jQuery, XmlSerializer in JSON.Net, Скриване на стари АПИ-та зад модерен интерфейс
 
 ## Декоратор
+![Decorator pattern](/DecoratorExample/CodeMap-Decorator.JPG)
+
 
 
 ## Мост (Bridge)
