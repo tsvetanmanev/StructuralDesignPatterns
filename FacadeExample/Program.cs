@@ -10,6 +10,9 @@ namespace FacadeExample
     {
         static void Main(string[] args)
         {
+            var facade = new CarFacade();
+
+            facade.CreateCar();
         }
     }
 }
