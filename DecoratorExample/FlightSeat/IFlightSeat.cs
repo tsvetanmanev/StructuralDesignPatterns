@@ -8,8 +8,8 @@ namespace DecoratorExample.FlightSeat
 {
     public interface IFlightSeat
     {
-        string GetFacilities();
+        ICollection<string> GetFacilities();
 
-        int GetCost();
+        double GetCost();
     }
 }

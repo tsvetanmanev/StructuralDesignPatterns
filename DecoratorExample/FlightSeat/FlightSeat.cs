@@ -8,17 +8,33 @@ namespace DecoratorExample.FlightSeat
 {
     public class FlightSeat : IFlightSeat
     {
-        public const int StandardPrice = 500;
-        public int GetCost()
+        public const double StandardPrice = 500;
+        public const string FlightSeatText = "Cabin Seat";
+
+        private ICollection<string> facilities;
+
+        public ICollection<string> Facilities
+        {
+            get
+            {
+                return this.facilities;
+            }
+            private set
+            {
+                this.facilities = value;
+            }
+        }
+
+        public double GetCost()
         {
             var seatCost = StandardPrice;
             return seatCost;
         }
 
-        public string GetFacilities()
+        public ICollection<string> GetFacilities()
         {
-            string seatItself = "Cabin Seat";
-            return seatItself;
+            Facilities.Add(FlightSeatText);
+            return Facilities;
         }
     }
 }

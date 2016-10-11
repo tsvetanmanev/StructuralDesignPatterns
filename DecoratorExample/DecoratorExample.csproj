@@ -58,6 +58,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorators\FlightSeatDecorator.cs" />
+    <Compile Include="Decorators\TvFligthSeatDecorator.cs" />
+    <Compile Include="Decorators\WifiFlightSeatDecorator.cs" />
     <Compile Include="FlightSeat\FlightSeat.cs" />
     <Compile Include="FlightSeat\IFlightSeat.cs" />
     <Compile Include="Program.cs" />
