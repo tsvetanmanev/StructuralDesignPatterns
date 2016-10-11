@@ -61,8 +61,8 @@
     <Compile Include="Decorators\FlightSeatDecorator.cs" />
     <Compile Include="Decorators\TvFligthSeatDecorator.cs" />
     <Compile Include="Decorators\WifiFlightSeatDecorator.cs" />
-    <Compile Include="FlightSeat\FlightSeat.cs" />
-    <Compile Include="FlightSeat\IFlightSeat.cs" />
+    <Compile Include="Seats\FlightSeat.cs" />
+    <Compile Include="Seats\IFlightSeat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

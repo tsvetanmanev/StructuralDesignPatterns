@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DecoratorExample.FlightSeat
+﻿namespace DecoratorExample.Seats
 {
+    using System;
+    using System.Collections.Generic;
+
     public class FlightSeat : IFlightSeat
     {
         public const double StandardPrice = 500;
@@ -13,12 +10,19 @@ namespace DecoratorExample.FlightSeat
 
         private ICollection<string> facilities;
 
+        public FlightSeat()
+        {
+            this.Facilities = new List<string>();
+            this.Facilities.Add(FlightSeatText);
+        }
+
         public ICollection<string> Facilities
         {
             get
             {
                 return this.facilities;
             }
+
             private set
             {
                 this.facilities = value;
@@ -33,8 +37,7 @@ namespace DecoratorExample.FlightSeat
 
         public ICollection<string> GetFacilities()
         {
-            Facilities.Add(FlightSeatText);
-            return Facilities;
+            return this.Facilities;
         }
     }
 }

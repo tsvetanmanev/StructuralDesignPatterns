@@ -1,8 +1,9 @@
 ﻿namespace DecoratorExample.Decorators
 {
     using System;
-    using DecoratorExample.FlightSeat;
     using System.Collections.Generic;
+    using DecoratorExample.Seats;
+    
     public class TvFligthSeatDecorator : FlightSeatDecorator
     {
         public const double TvCost = 40;
@@ -10,6 +11,7 @@
 
         public TvFligthSeatDecorator(IFlightSeat flightSeat) : base(flightSeat)
         {
+            this.FlightSeat.GetFacilities().Add(TvText);
         }
         
         public override double GetCost()
@@ -22,7 +24,6 @@
         public override ICollection<string> GetFacilities()
         {
             var originalFacilities = this.FlightSeat.GetFacilities();
-            originalFacilities.Add(TvText);
             return originalFacilities;
         }
     }

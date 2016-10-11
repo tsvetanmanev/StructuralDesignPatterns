@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DecoratorExample.FlightSeat;
-
-namespace DecoratorExample.Decorators
+﻿namespace DecoratorExample.Decorators
 {
+    using System.Collections.Generic;
+    using DecoratorExample.Seats;
+
     public class WifiFlightSeatDecorator : FlightSeatDecorator
     {
         public const int WifiCost = 20;
@@ -14,7 +10,7 @@ namespace DecoratorExample.Decorators
         
         public WifiFlightSeatDecorator(IFlightSeat flightSeat) : base(flightSeat)
         {
-
+            this.FlightSeat.GetFacilities().Add(WiFiText);
         }
 
         public override double GetCost()
@@ -27,7 +23,6 @@ namespace DecoratorExample.Decorators
         public override ICollection<string> GetFacilities()
         {
             var originalFacilities = this.FlightSeat.GetFacilities();
-            originalFacilities.Add(WiFiText);
             return originalFacilities;
         }
     }
