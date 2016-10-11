@@ -2,4 +2,4 @@
 
 ## Фасада - шаблон за дизайн
 
-![solarized vim](https://github.com/altercation/solarized/raw/master/img/solarized-vim.png)
+![solarized vim](https://github.com/tsvetanmanev/StructuralDesignPatterns/blob/master/FacadeExample/CodeMap-Facade.JPG?raw=truea)
