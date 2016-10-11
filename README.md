@@ -2,5 +2,4 @@
 
 ## Фасада - шаблон за дизайн
 
-[!(Image of Facade Pattern)[https://github.com/tsvetanmanev/StructuralDesignPatterns/blob/master/FacadeExample/CodeMap-Facade.JPG?raw=true]]
-
+![solarized vim](https://github.com/altercation/solarized/raw/master/img/solarized-vim.png)
