@@ -23,6 +23,7 @@
             Console.WriteLine("Seat with Wifi and TV parameters:");
             PrintFacilities(seatWithWifiAndTv);
             Console.WriteLine(string.Format("Total cost: {0}", seatWithWifiAndTv.GetCost()));
+            //Test commit
         }
 
         public static void PrintFacilities(IFlightSeat flightSeat)
